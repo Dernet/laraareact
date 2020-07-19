@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','IndexController@index')->name('');
 
 Route::get('/test', function(){
-   $users = DB::table('users')->get();
-    dd($users);
+  $products = (App\Products::with('category.subCategories'))->get();
+  dd($products);
 });

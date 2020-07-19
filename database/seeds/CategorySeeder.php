@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class AuthorSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,7 @@ class AuthorSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Author::class, 50)->create();
+        factory(App\Category::class, 3)->create();
+
     }
 }

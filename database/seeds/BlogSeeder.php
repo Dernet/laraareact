@@ -11,6 +11,7 @@ class BlogSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Blog::class, 6)->create();
+
     }
 }
